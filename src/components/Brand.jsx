@@ -1,8 +1,8 @@
-const Brand = () => {
+
+export const Brand = () => {
     return(
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href='/pokemons'>
         Tienda
         </a>)
 }
 
-export default Brand
