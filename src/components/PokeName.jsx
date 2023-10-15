@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+/* import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom";
 import { pokeapiName } from "../services/pokeapi";
 
@@ -31,4 +31,4 @@ export const PokemonName = () => {
         </div>
       </div>
     )
-}
+} */

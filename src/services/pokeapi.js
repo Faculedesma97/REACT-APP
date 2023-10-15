@@ -1,11 +1,9 @@
-const poke_url = `https://pokeapi.co/api/v2`;
+const fakeStore = 'https://fakestoreapi.com/products';
 
-export const pokeList = (limit = 30, offset= 0)=>{
+export const catalogo = ()=>{
 
-    return fetch (`${poke_url}/pokemon?limit=${limit}&offset=${offset}`);
+    fetch(fakeStore)
+    .then(res=>res.json())
+    .then(json=>console.log(json))
 
 }
-
-export const pokeapiName = (name) => {
-    return fetch(`${poke_url}/pokemon/${name}`);
-  }

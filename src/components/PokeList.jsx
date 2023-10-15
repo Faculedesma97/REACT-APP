@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react"
-import { pokeList } from "../services/pokeapi";
+/* import { useState, useEffect } from "react"
+import { Catalogo } from "../services/pokeapi"
 
 
 export const Pokemons = () => {
@@ -25,4 +25,4 @@ export const Pokemons = () => {
             </ul>
         </div>
     )
-}
+} */

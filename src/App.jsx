@@ -1,9 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Pokemons } from "./components/PokeList";
-import { PokemonName } from './components/PokeName';
+import { catalogo } from "./services/pokeapi";
 import { Brand } from "./components/Brand";
 import Items from './components/Items';
 import Carrito from './components/Carrito';
+import { Productos } from './components/catalogo';
+
+console.log(catalogo)
 
 function App() {
 
@@ -19,18 +21,13 @@ function App() {
       <Carrito/>
       </div>
     </nav>
-    <a href='/pokemons'>VER CATALOGO</a>
+    <Productos/>
       <Routes>
-        <Route path="/" element={<h1>HOLA COMO ESTAS</h1>} />
+        <Route path="/" element={<h1>Bienvenidos</h1>} />
         <Route 
         exact path="./pages/Tienda" 
         element={<h1>Tienda</h1>} />
-      <Route 
-      exact path="/pokemons" 
-      element={<Pokemons/>}/>
-      <Route 
-      exact path="/pokemon/:pokemonName" 
-      element={<PokemonName/>}/>
+
       </Routes>
 
     </BrowserRouter>
